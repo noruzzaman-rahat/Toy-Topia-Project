@@ -91,7 +91,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-300 transition-all px-6 md:px-16 lg:px-24 py-3 flex items-center justify-between">
       {/* Logo */}
       <Link to="/">
-        <img src="/img/logo2.png" alt="Logo" className="w-24" />
+        <img src="/img/toy-nav-logo.png" alt="Logo" className="w-24" />
       </Link>
 
       {/* Desktop & Tablet Menu */}
@@ -121,7 +121,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={handleLogOut}
-            className="px-5 py-2 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-indigo-600 hover:to-purple-600 text-white rounded-full transition"
+            className="px-5 py-2 bg-gradient-to-r from-red-500 to-green-400 hover:from-green-600 hover:to-red-600 text-white rounded-full transition"
           >
             Logout
           </button>

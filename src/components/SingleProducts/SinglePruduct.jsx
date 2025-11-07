@@ -32,10 +32,10 @@ const SinglePruduct = ({ product }) => {
 
       <div className="space-y-2 mt-5">
         <div className="flex items-center justify-start gap-2">
-          <p className="text-sm font-semibold text-purple-500 bg-purple-100 rounded-full py-1 px-4 text-center">
+          <p className="text-sm font-semibold text-green-500 bg-red-100 rounded-full py-1 px-4 text-center">
             {subCategory}
           </p>
-          <p className="text-sm font-semibold text-purple-500 bg-purple-100 rounded-full py-1 px-4 text-center">
+          <p className="text-sm font-semibold text-green-500 bg-red-100 rounded-full py-1 px-4 text-center">
             {popularity}
           </p>
         </div>
@@ -48,14 +48,14 @@ const SinglePruduct = ({ product }) => {
 
         <div className="flex items-center justify-between">
           <p className="text-gray-600 font-medium">Price: ${price}</p>
-          <p className="flex items-center gap-1 bg-purple-100 rounded-full py-1 px-2 text-purple-600">
-            <FaStar className="text-purple-500" />
+          <p className="flex items-center gap-1 bg-gray-100 rounded-full py-1 px-2 text-yellow-600">
+            <FaStar className="text-yellow-500" />
             {rating}
           </p>
         </div>
 
         <Link to={`/products/${toyId}`}>
-          <button className="bg-linear-to-r from-purple-500 to-indigo-500 hover:from-indigo-600 hover:to-purple-600 text-white cursor-pointer w-full py-2 rounded-md mt-3 transition-all duration-300 ">
+          <button className="bg-linear-to-r from-red-500 to-green-500 hover:from-indigo-600 hover:to-purple-600 text-white cursor-pointer w-full py-2 rounded-md mt-3 transition-all duration-300 ">
             View More
           </button>
         </Link>

@@ -5,10 +5,10 @@
 
 a.active {
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #a855f7, #6366f1);
+  border-image: linear-gradient(to right, red, green);
   border-image-slice: 1;
   color: transparent;
-  background: linear-gradient(to right, #a855f7, #6366f1);
+  background: linear-gradient(to right, green, green);
   -webkit-background-clip: text;
   background-clip: text;
 }

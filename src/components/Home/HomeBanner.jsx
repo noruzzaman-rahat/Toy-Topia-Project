@@ -3,7 +3,7 @@ import React from "react";
 const HomeBanner = () => {
   const slides = [
     {
-      img: "https://ik.imagekit.io/2o23yla4n/assignment-9/creative-play-2.webp?updatedAt=1761152236332",
+      img: "https://i.ibb.co.com/WNn6wMRN/hero-toys.jpg",
       title: "Spark Your Child's Creativity",
       subtitle: "Fun and educational toys for endless imagination!",
     },
@@ -47,13 +47,13 @@ const HomeBanner = () => {
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
             <a
               href={`#slide${index === 0 ? slides.length : index}`}
-              className="btn btn-circle bg-purple-600 hover:bg-purple-700 text-white border-none"
+              className="btn btn-circle bg-green-600 hover:bg-red-700 text-white border-none"
             >
               ❮
             </a>
             <a
               href={`#slide${index === slides.length - 1 ? 1 : index + 2}`}
-              className="btn btn-circle bg-purple-600 hover:bg-purple-700 text-white border-none"
+              className="btn btn-circle bg-green-600 hover:bg-red-700 text-white border-none"
             >
               ❯
             </a>
