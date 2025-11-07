@@ -76,12 +76,12 @@ const Profile = () => {
   if (loading) return <Loading />;
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#6d32f8] to-[#e10080] pb-20 pt-30   px-4 ">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-200 pb-20 pt-30   px-4 ">
       <title>Toy-Topia | My Profile</title>
 
       {/* Profile Info Card */}
       <div
-        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 border border-purple-200 text-white p-8 rounded-xl shadow-lg text-center bg-gradient-to-r from-purple-600/40 to-pink-500/40 backdrop-blur-md"
+        className="w-full mt-[100px] md:w-3/4 lg:w-2/3 xl:w-1/2 border border-gray-200 text-black p-8 rounded-xl shadow-lg text-center bg-white backdrop-blur-md"
         data-aos="fade-up"
       >
         <img
@@ -94,14 +94,14 @@ const Profile = () => {
         <div className="mt-6 space-y-2" data-aos="fade-up" data-aos-delay="200">
           <h4 className="text-xl font-semibold">
             Name:{" "}
-            <span className="font-normal text-white/80">
+            <span className="font-normal text-black/80">
               {user?.displayName || "N/A"}
             </span>
           </h4>
-          <h4 className="text-white/80">
+          <h4 className="text-black/80">
             Email: <span>{user?.email || "N/A"}</span>
           </h4>
-          <h4 className="text-white/70 text-sm">
+          <h4 className="text-black/70 text-sm">
             Last Login:{" "}
             {user?.metadata?.lastSignInTime
               ? new Date(user.metadata.lastSignInTime).toLocaleString()
@@ -113,17 +113,17 @@ const Profile = () => {
       {/* Update Form */}
       <form
         onSubmit={handleUpdate}
-        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mt-10 bg-white/10 border border-purple-300/50 shadow-xl rounded-xl p-8 backdrop-blur-md"
+        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mt-[50px] bg-white border border-purple-300/50 shadow-xl rounded-xl p-8 backdrop-blur-md"
         data-aos="fade-up"
         data-aos-delay="400"
       >
-        <h2 className="text-center text-2xl font-semibold text-white mb-6">
+        <h2 className="text-center text-2xl font-semibold text-black mb-6">
           Update Your Information
         </h2>
 
         <div className="space-y-5">
           <div>
-            <label className="block text-white font-medium mb-2">
+            <label className="block text-black font-medium mb-2">
               Profile Photo URL
             </label>
             <input
@@ -131,12 +131,12 @@ const Profile = () => {
               name="photoURL"
               defaultValue={user?.photoURL}
               placeholder="Enter new photo URL"
-              className="w-full bg-transparent border border-purple-400 text-white placeholder-white/70 rounded-md py-2 px-4 focus:border-2 focus:border-purple-500 outline-none transition-all"
+              className="w-full bg-transparent border border-gray-400 text-black placeholder-white/70 rounded-md py-2 px-4 focus:border-2 focus:border-gray-500 outline-none transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-white font-medium mb-2">
+            <label className="block text-black font-medium mb-2">
               Display Name
             </label>
             <input
@@ -144,25 +144,25 @@ const Profile = () => {
               name="name"
               defaultValue={user?.displayName}
               placeholder="Enter your name"
-              className="w-full bg-transparent border border-purple-400 text-white placeholder-white/70 rounded-md py-2 px-4 focus:border-2 focus:border-purple-500 outline-none transition-all"
+              className="w-full bg-transparent border border-gray-400 text-black placeholder-white/70 rounded-md py-2 px-4 focus:border-2 focus:border-gray-500 outline-none transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-white font-medium mb-2">Email</label>
+            <label className="block text-black font-medium mb-2">Email</label>
             <input
               type="email"
               name="email"
               defaultValue={user?.email}
               placeholder="Enter your email"
-              className="w-full bg-transparent border border-purple-400 text-white placeholder-white/70 rounded-md py-2 px-4 focus:border-2 focus:border-purple-500 outline-none transition-all"
+              className="w-full bg-transparent border border-gray-400 text-black placeholder-white/70 rounded-md py-2 px-4 focus:border-2 focus:border-gray-500 outline-none transition-all"
             />
           </div>
         </div>
 
         <button
           type="submit"
-          className="w-full mt-8 py-3 cursor-pointer bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-md transition-all duration-200"
+          className="w-full mt-8 py-3 cursor-pointer bg-gradient-to-r cursor-pointer from-red-600 to-green-500  text-white font-semibold rounded-lg shadow-md transition-all duration-200"
           data-aos="zoom-in"
           data-aos-delay="600"
         >
