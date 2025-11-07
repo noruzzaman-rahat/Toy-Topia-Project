@@ -53,10 +53,10 @@ const Testimonials = () => {
 
   return (
     <div className="w-full   mt-16">
-      <h1 className="text-center text-4xl font-extrabold text-purple-600 mb-2 drop-shadow-sm">
+      <h1 className="text-center text-4xl font-extrabold text-green-600 mb-2 drop-shadow-sm">
         What Parents Say 
       </h1>
-      <p className="text-center text-purple-600 max-w-2xl mx-auto mb-10 text-lg">
+      <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-lg">
         Happy families around the world love our fun and safe toy collections!
       </p>
 

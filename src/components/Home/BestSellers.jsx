@@ -26,7 +26,7 @@ const BestSellers = () => {
   return (
     <div className="my-12">
       <h2
-        className="text-4xl font-bold text-center text-purple-700 mb-6"
+        className="text-4xl font-bold text-center text-green-700 mb-6"
         data-aos="fade-up"
       >
         Top Rate Toys
