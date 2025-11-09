@@ -164,7 +164,7 @@ const SignUp = () => {
             onChange={(e) => setEmailInput(e.target.value)}
             placeholder="Enter your email"
             required
-            className="w-full border border-gray-400/50 bg-white/10 text-white rounded-md px-4 py-2 outline-none focus:border-black focus:ring-1 focus:ring-white/80 placeholder:text-black/70"
+            className="w-full border border-gray-400/50 bg-white/10 text-black rounded-md px-4 py-2 outline-none focus:border-black focus:ring-1 focus:ring-white/80 placeholder:text-black/70"
           />
         </div>
 
@@ -176,10 +176,10 @@ const SignUp = () => {
               name="password"
               placeholder="Enter your password"
               required
-              className="w-full border border-gray-400/50 bg-white/10 text-white rounded-md px-4 py-2 outline-none focus:border-black focus:ring-1 focus:ring-white/80 placeholder:text-black/70"
+              className="w-full border border-gray-400/50 bg-white/10 text-black rounded-md px-4 py-2 outline-none focus:border-black focus:ring-1 focus:ring-black/80 placeholder:text-black/70"
             />
             <span
-              className="absolute right-3 top-2.5 cursor-pointer text-white/70"
+              className="absolute right-3 top-2.5 cursor-pointer text-black/70"
               onClick={() => setShowPassword(!showPassword)}
             >
               {showPassword ? <IoEyeOutline /> : <FaRegEyeSlash />}

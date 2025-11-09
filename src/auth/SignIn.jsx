@@ -124,7 +124,7 @@ const SignIn = () => {
               name="password"
               placeholder="Enter your password"
               required
-              className="w-full border border-gray-400/50 bg-white/10 text-white rounded-md px-4 py-2 outline-none focus:border-white focus:ring-1 focus:ring-white/80 placeholder:text-black/70"
+              className="w-full border border-gray-400/50 bg-white/10 text-black rounded-md px-4 py-2 outline-none focus:border-gray focus:ring-1 focus:ring-black/80 placeholder:text-black/70"
             />
             <span
               className="absolute right-3 top-2.5 cursor-pointer text-black/80"

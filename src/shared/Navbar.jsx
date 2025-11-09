@@ -101,10 +101,10 @@ const Navbar = () => {
                   className="w-12 h-12 rounded-full border border-purple-500 cursor-pointer"
                 />
               )}
-              <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-gray-100 text-xs p-2 rounded shadow opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-gray-100 text-xs p-2 rounded shadow opacity-0 group-hover:opacity-100 transition-opacity">
                 <h4>{user.displayName}</h4>
                 <p>{user.email}</p>
-              </div>
+              </div> */}
             </div>
           </Link>
           <button
@@ -153,10 +153,10 @@ const Navbar = () => {
                   className="w-12 h-12 rounded-full border border-purple-500"
                 />
               )}
-              <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-gray-100 p-2 rounded shadow text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-gray-100 p-2 rounded shadow text-xs opacity-0 group-hover:opacity-100 transition-opacity">
                 <h4>{user.displayName}</h4>
                 <p>{user.email}</p>
-              </div>
+              </div> */}
             </div>
             <button
               onClick={() => {
