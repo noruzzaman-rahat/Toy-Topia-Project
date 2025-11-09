@@ -27,7 +27,7 @@ const MOCK_POSTS = [
     author: "Anika",
     date: "2025-09-05",
     cover:
-      "https://images.unsplash.com/photo-1594240974614-37efc9e3aa3d?q=80&w=1400&auto=format&fit=crop",
+      "https://i.ibb.co.com/JWFcRnPD/teddy-bear.jpg",
     readTime: 5,
   },
   {
@@ -53,7 +53,7 @@ const MOCK_POSTS = [
     author: "Sadia",
     date: "2025-08-01",
     cover:
-      "https://images.unsplash.com/photo-1604882357861-1c12d21c28f6?q=80&w=1400&auto=format&fit=crop",
+      "https://i.ibb.co.com/WR4HxcF/train-set.jpg",
     readTime: 7,
   },
   {
@@ -66,7 +66,7 @@ const MOCK_POSTS = [
     author: "Nusrat",
     date: "2025-07-10",
     cover:
-      "https://images.unsplash.com/photo-1517957754645-7085a86a783f?q=80&w=1400&auto=format&fit=crop",
+      "https://ik.imagekit.io/2o23yla4n/assignment-9/image7.jpg?updatedAt=1761059952809",
     readTime: 8,
   },
   {
@@ -79,7 +79,7 @@ const MOCK_POSTS = [
     author: "Irfan",
     date: "2025-06-18",
     cover:
-      "https://images.unsplash.com/photo-1580674285050-2089d83d1fcd?q=80&w=1400&auto=format&fit=crop",
+      "https://ik.imagekit.io/2o23yla4n/assignment-9/image8.jpg?updatedAt=1761059952982",
     readTime: 5,
   },
 ];
