@@ -35,7 +35,7 @@ const AllToys = () => {
     <div className=" px-6 md:px-16 lg:px-24 xl:px-32   mt-24 mb-12">
       <title>Toy-Topia | All Toys</title>
       <h2
-        className="text-2xl font-semibold text-center mb-8"
+        className="text-3xl mt-[50px] font-semibold mb-8"
         data-aos="fade-down"
       >
         All Toys

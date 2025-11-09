@@ -1,7 +1,7 @@
 [
   {
     "toyId": 1,
-    "toyName": "Lego Classic Bricks",
+    "toyName": "Tiny Tales Dolls",
     "sellerName": "Toys R Us Local",
     "sellerEmail": "contact@toysruslocal.com",
     "price": 49.99,
@@ -14,7 +14,7 @@
   },
   {
     "toyId": 2,
-    "toyName": "Hot Wheels Mega Track Set",
+    "toyName": "BuildBright Blocks",
     "sellerName": "Speedy Toys",
     "sellerEmail": "sales@speedytoys.com",
     "price": 34.5,
@@ -27,7 +27,7 @@
   },
   {
     "toyId": 3,
-    "toyName": "Barbie Dreamhouse",
+    "toyName": "ColorFit Puzzle Set",
     "sellerName": "Doll World",
     "sellerEmail": "info@dollworld.com",
     "price": 129.99,
@@ -40,7 +40,7 @@
   },
   {
     "toyId": 4,
-    "toyName": "NERF Elite Blaster",
+    "toyName": "SpeedMax Car",
     "sellerName": "Action Zone",
     "sellerEmail": "support@actionzone.com",
     "price": 39.99,
@@ -53,7 +53,7 @@
   },
   {
     "toyId": 5,
-    "toyName": "Wooden Train Set",
+    "toyName": "HoneyHug Teddy",
     "sellerName": "Classic Kids Store",
     "sellerEmail": "hello@classickids.com",
     "price": 27.95,
@@ -66,7 +66,7 @@
   },
   {
     "toyId": 6,
-    "toyName": "RC Monster Truck",
+    "toyName": "Wooden Train Set",
     "sellerName": "Tech Toys Hub",
     "sellerEmail": "orders@techtoyshub.com",
     "price": 59.99,
