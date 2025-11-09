@@ -129,7 +129,7 @@ const Navbar = () => {
       ) : (
         <Link
           to="/login"
-          className="hidden md:flex px-5 py-2 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-indigo-600 hover:to-purple-600 text-white rounded-full transition"
+          className="hidden md:flex px-5 py-2 bg-gradient-to-r from-red-500 to-green-500 hover:from-indigo-600 hover:to-purple-600 text-white rounded-full transition"
         >
           Login
         </Link>

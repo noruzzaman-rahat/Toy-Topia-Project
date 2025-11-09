@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
