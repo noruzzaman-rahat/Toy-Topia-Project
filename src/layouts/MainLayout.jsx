@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <div>
       <Navbar />
-      <main className="flex items-center justify-between ">
+      <main className="flex items-center justify-between">
         <Outlet />
       </main>
       <Footers />

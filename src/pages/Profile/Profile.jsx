@@ -81,7 +81,7 @@ const Profile = () => {
 
       {/* Profile Info Card */}
       <div
-        className="w-full mt-[100px] md:w-3/4 lg:w-2/3 xl:w-1/2 border border-gray-200 text-black p-8 rounded-xl shadow-lg text-center bg-white backdrop-blur-md"
+        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 border border-gray-200 text-black p-8 rounded-xl shadow-lg text-center bg-white backdrop-blur-md"
         data-aos="fade-up"
       >
         <img
@@ -113,7 +113,7 @@ const Profile = () => {
       {/* Update Form */}
       <form
         onSubmit={handleUpdate}
-        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mt-[20px] bg-white border border-purple-300/50 shadow-xl rounded-xl p-8 backdrop-blur-md"
+        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mt-[20px] bg-white border border-gray-300/50 shadow-xl rounded-xl p-8 backdrop-blur-md"
         data-aos="fade-up"
         data-aos-delay="400"
       >

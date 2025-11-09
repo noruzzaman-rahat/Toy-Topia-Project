@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom"; // লক্ষ্য: react-router-dom
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import Swal from "sweetalert2";
 
@@ -43,44 +43,24 @@ const Navbar = () => {
 
   const links = (
     <>
-      <NavLink
-        onClick={() => setOpen(false)}
-        to="/"
-        className="text-gray-600 font-semibold hover:text-purple-500"
-      >
+      <NavLink onClick={() => setOpen(false)} to="/" className="text-gray-600 font-semibold hover:text-purple-500">
         Home
       </NavLink>
-      <NavLink
-        onClick={() => setOpen(false)}
-        to="/products"
-        className="text-gray-600 font-semibold hover:text-purple-500"
-      >
+      <NavLink onClick={() => setOpen(false)} to="/products" className="text-gray-600 font-semibold hover:text-purple-500">
         All Toys
       </NavLink>
       {user && (
-        <NavLink
-          onClick={() => setOpen(false)}
-          to="/blog"
-          className="text-gray-600 font-semibold hover:text-purple-500"
-        >
+        <NavLink onClick={() => setOpen(false)} to="/blog" className="text-gray-600 font-semibold hover:text-purple-500">
           Blog
         </NavLink>
       )}
       {user && (
-        <NavLink
-          onClick={() => setOpen(false)}
-          to="/contacts"
-          className="text-gray-600 font-semibold hover:text-purple-500"
-        >
+        <NavLink onClick={() => setOpen(false)} to="/contacts" className="text-gray-600 font-semibold hover:text-purple-500">
           Contact
         </NavLink>
       )}
       {user && (
-        <NavLink
-          onClick={() => setOpen(false)}
-          to="/profile"
-          className="text-gray-600 font-semibold hover:text-purple-500"
-        >
+        <NavLink onClick={() => setOpen(false)} to="/profile" className="text-gray-600 font-semibold hover:text-purple-500">
           My Profile
         </NavLink>
       )}
@@ -88,7 +68,15 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-300 transition-all px-6 md:px-16 lg:px-24 py-3 flex items-center justify-between relative">
+    <nav
+      className="
+        sticky top-0 left-0 right-0 z-50
+        bg-white/90 backdrop-blur-md border-b border-gray-300
+        px-6 md:px-16 lg:px-24
+        h-16 md:h-20                  /* fixed height */
+        flex items-center justify-between
+      "
+    >
       {/* Logo */}
       <Link to="/">
         <img src="/img/toy-nav-logo.png" alt="Logo" className="w-24" />
@@ -104,12 +92,12 @@ const Navbar = () => {
         <div className="hidden md:flex w-10 h-10 border-4 border-t-blue-500 border-gray-300 rounded-full animate-spin"></div>
       ) : user ? (
         <div className="hidden md:flex items-center gap-4">
-          <Link to="/profile">
+          <Link to="/profile" aria-label="Profile">
             <div className="relative group">
               {user.photoURL && (
                 <img
                   src={user.photoURL}
-                  alt={user.displayName}
+                  alt={user.displayName || "User"}
                   className="w-12 h-12 rounded-full border border-purple-500 cursor-pointer"
                 />
               )}
@@ -136,19 +124,18 @@ const Navbar = () => {
       )}
 
       {/* Mobile Hamburger */}
-      <button onClick={() => setOpen(!open)} className="md:hidden">
-        {open ? (
-          <MdClose className="w-6 h-6" />
-        ) : (
-          <MdMenu className="w-6 h-6" />
-        )}
+      <button onClick={() => setOpen(!open)} className="md:hidden" aria-label="Toggle menu">
+        {open ? <MdClose className="w-6 h-6" /> : <MdMenu className="w-6 h-6" />}
       </button>
 
       {/* Mobile Menu */}
       <div
-        className={`${
-          open ? "flex" : "hidden"
-        } flex-col md:hidden absolute top-[60px] left-0 w-full bg-white shadow-md py-4 px-5 gap-3`}
+        className={`
+          ${open ? "flex" : "hidden"}
+          flex-col md:hidden absolute
+          top-16 md:top-20         /* match navbar height */
+          left-0 w-full bg-white shadow-md py-4 px-5 gap-3
+        `}
       >
         {links}
 
@@ -159,11 +146,13 @@ const Navbar = () => {
         ) : user ? (
           <div className="flex flex-col gap-2 mt-2">
             <div className="relative group flex items-center">
-              <img
-                src={user.photoURL}
-                alt={user.displayName}
-                className="w-12 h-12 rounded-full border border-purple-500"
-              />
+              {user.photoURL && (
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName || "User"}
+                  className="w-12 h-12 rounded-full border border-purple-500"
+                />
+              )}
               <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-gray-100 p-2 rounded shadow text-xs opacity-0 group-hover:opacity-100 transition-opacity">
                 <h4>{user.displayName}</h4>
                 <p>{user.email}</p>

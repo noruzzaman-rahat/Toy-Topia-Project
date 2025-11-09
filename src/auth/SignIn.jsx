@@ -89,7 +89,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-300 px-4 py-12">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-300 px-4">
       <title>Toy-Topia | Sign In</title>
       <form
         onSubmit={handleSignIn}
