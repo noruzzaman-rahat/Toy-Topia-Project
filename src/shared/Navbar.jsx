@@ -88,7 +88,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-300 transition-all px-6 md:px-16 lg:px-24 py-3 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-300 transition-all px-6 md:px-16 lg:px-24 py-3 flex items-center justify-between relative">
       {/* Logo */}
       <Link to="/">
         <img src="/img/toy-nav-logo.png" alt="Logo" className="w-24" />

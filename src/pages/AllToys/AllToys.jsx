@@ -32,7 +32,7 @@ const AllToys = () => {
   }
 
   return (
-    <div className=" px-6 md:px-16 lg:px-24 xl:px-32   mt-24 mb-12">
+    <div className=" px-6 md:px-16 lg:px-24 xl:px-32 mb-12">
       <title>Toy-Topia | All Toys</title>
       <h2
         className="text-3xl mt-[50px] font-semibold mb-8"
