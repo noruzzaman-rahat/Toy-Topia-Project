@@ -149,7 +149,7 @@ const SignIn = () => {
 
         <button
           type="submit"
-          className="w-full mt-3 py-3 bg-gradient-to-r cursor-pointer from-red-600 to-green-500  text-white font-semibold rounded-md shadow-md transition duration-200"
+          className="w-full mt-3 py-3 bg-gradient-to-r cursor-pointer from-red-600 to-green-500 hover:from-indigo-600 hover:to-purple-600  text-white font-semibold rounded-md shadow-md transition duration-200"
         >
           Sign In
         </button>

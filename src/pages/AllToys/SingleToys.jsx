@@ -61,7 +61,7 @@ const SingleToys = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 md:px-20 w-full mx-auto py-10">
+    <div className="flex flex-col items-center justify-center mt-[100px] px-4 md:px-20 w-full mx-auto py-10">
       <title>Toy-Topia | Toy Details</title>
       <div
         className="max-w-6xl w-full my-20 flex flex-col md:flex-row items-center gap-10 "
@@ -77,22 +77,22 @@ const SingleToys = () => {
         <div className="w-full md:w-1/2 space-y-4" data-aos="fade-left">
           <h2 className="text-3xl font-bold text-gray-800">{toyName}</h2>
           <div className="flex flex-wrap gap-3">
-            <span className="px-3 py-1 rounded-full bg-purple-100 text-purple-700 font-medium">
+            <span className="px-3 py-1 rounded-full bg-gray-100 text-red-700 font-medium">
               {subCategory}
             </span>
-            <span className="px-3 py-1 rounded-full bg-purple-100 text-purple-700 font-medium">
+            <span className="px-3 py-1 rounded-full bg-gray-100 text-red-700 font-medium">
               {popularity}
             </span>
-            <span className="px-3 py-1 rounded-full bg-purple-100 text-purple-700 font-medium">
+            <span className="px-3 py-1 rounded-full bg-gray-100 text-red-700 font-medium">
               Rating: {rating}
             </span>
           </div>
           <p className="text-gray-600 font-medium gap-2  flex items-center">
-            <BiUser className="text-purple-500 w-6 h-6" />
+            <BiUser className="text-red-500 w-6 h-6" />
             Seller: <span className="font-semibold ">{sellerName}</span>
           </p>
           <p className="text-gray-600 font-medium  gap-2 flex items-center">
-            <MdEmail className="text-purple-500 w-6 h-6" /> Email:{" "}
+            <MdEmail className="text-red-500 w-6 h-6" /> Email:{" "}
             <span className="font-semibold">{sellerEmail}</span>
           </p>
           <p className="text-gray-700 font-medium">
@@ -100,7 +100,7 @@ const SingleToys = () => {
           </p>
 
           <p className="text-gray-500 font-medium">{description}</p>
-          <p className="text-xl font-semibold text-purple-700 mt-2">
+          <p className="text-xl font-semibold text-red-700 mt-2">
             Price: ${price}
           </p>
         </div>
@@ -131,7 +131,7 @@ const SingleToys = () => {
         </div>
         <button
           type="submit"
-          className="bg-purple-600 text-white font-semibold py-2 rounded-md hover:bg-purple-700 transition cursor-pointer"
+          className="bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-purple-500 transition cursor-pointer"
         >
           Try Now
         </button>

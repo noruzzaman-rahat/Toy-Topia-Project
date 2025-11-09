@@ -113,7 +113,7 @@ const Profile = () => {
       {/* Update Form */}
       <form
         onSubmit={handleUpdate}
-        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mt-[50px] bg-white border border-purple-300/50 shadow-xl rounded-xl p-8 backdrop-blur-md"
+        className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mt-[20px] bg-white border border-purple-300/50 shadow-xl rounded-xl p-8 backdrop-blur-md"
         data-aos="fade-up"
         data-aos-delay="400"
       >
@@ -162,7 +162,7 @@ const Profile = () => {
 
         <button
           type="submit"
-          className="w-full mt-8 py-3 cursor-pointer bg-gradient-to-r cursor-pointer from-red-600 to-green-500  text-white font-semibold rounded-lg shadow-md transition-all duration-200"
+          className="w-full mt-8 py-3 cursor-pointer bg-gradient-to-r cursor-pointer from-red-600 to-green-500 hover:from-indigo-600 hover:to-purple-600  text-white font-semibold rounded-lg shadow-md transition-all duration-200"
           data-aos="zoom-in"
           data-aos-delay="600"
         >
