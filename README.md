@@ -40,9 +40,7 @@ It helps kids and parents explore toys, contact the store, and read toy-related 
 
 ---
 
-## ⚡ Installation
 
-1. **Clone the repository**
 
 
 
